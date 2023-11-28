@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+import os
+import torch
+
+
+os.system("wget https://pjlab-3090-sport.oss-cn-beijing.aliyuncs.com/downloads/InterpAny-Clearer/checkpoints.tar.gz")
+os.system("tar -zxvf checkpoints.tar.gz")
