@@ -57,5 +57,5 @@ class Predictor(BasePredictor):
         output_path = "/InterpAny/results/video_results/" + filename
 
         # convert mp4 in output_path with ffmpeg
-        os.system("ffmpeg -i " + output_path + " -vcodec libx264 /tmp/output.mp4")
+        os.system("ffmpeg -y -i " + output_path + " -vcodec libx264 /tmp/output.mp4")
         return Path("/tmp/output.mp4")        
